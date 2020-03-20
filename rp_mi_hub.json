@@ -1,0 +1,291 @@
+﻿{
+    "default": {
+        "author": "Republic Polytechnic - Material Innovation Hub",
+        "firstScene": "entrance",
+        "autoLoad": true,
+        "sceneFadeDuration": 1000,
+        "horizonRoll": 2
+    },
+    
+    "scenes": {
+        "entrance": {
+            "title": "Entrance",
+            "panorama": "360/entrance.jpg",
+            "yaw": 170,
+            "pitch": -10,
+            "createTooltipFunc": hotspot,
+            "createTooltipArgs": "Baltimore Museum of Art",
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 130,
+                    "targetYaw": 150,
+                    "type": "scene",
+                    "text": "3D Print Farm",
+                    "sceneId": "printfarm"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 210,
+                    "targetYaw": 210,
+                    "type": "scene",
+                    "text": "Class Space",
+                    "sceneId": "class"
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 85,
+                    "targetYaw": 80,
+                    "type": "scene",
+                    "text": "Robotic Arm",
+                    "sceneId": "robot"
+                },
+                {
+                    "pitch": -5,
+                    "yaw": -90,
+                    "type": "scene",
+                    "text": "Corridor",
+                    "sceneId": "corridor"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 170,
+                    "type": "info",
+                    "text": "<b>Robotic</b><br/>Arm",
+                    "URL": "http://www.appigniter.co"
+                }
+            ]
+        },
+
+        "printfarm": {
+            "title": "3d Print Farm",
+            "panorama": "360/printfarm.jpg",
+            "yaw": 185,
+            "pitch": -5,
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": -85,
+                    "targetYaw": -85,
+                    "type": "scene",
+                    "text": "Class Room",
+                    "sceneId": "class"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": -71,
+                    "targetYaw": -70,
+                    "type": "scene",
+                    "text": "Corridor",
+                    "sceneId": "corridor"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -57,
+                    "targetYaw": -57,
+                    "type": "scene",
+                    "text": "Entrance",
+                    "sceneId": "entrance"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 180,
+                    "type": "info",
+                    "text": "Ultimaker 2+"
+                }
+            ]
+        },
+
+        "class": {
+            "title": "Class Space",
+            "panorama": "360/class.jpg",
+            "yaw": 160,
+            "pitch": -10,
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 90,
+                    "targetYaw": 90,
+                    "type": "scene",
+                    "text": "3D Print Farm",
+                    "sceneId": "printfarm"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 20,
+                    "targetYaw": 20,
+                    "type": "scene",
+                    "text": "Entrance",
+                    "sceneId": "entrance"
+                }
+            ]
+        },
+
+        "robot": {
+            "title": "Robotic Arm",
+            "panorama": "360/robot.jpg",
+            "yaw": 80,
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": -90,
+                    "targetYaw": -90,
+                    "type": "scene",
+                    "text": "Entrance",
+                    "sceneId": "entrance"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 65,
+                    "type": "info",
+                    "text": "Robotic Arm"
+                }
+            ]
+        },
+
+        "corridor": {
+            "title": "Corridor",
+            "panorama": "360/corridor-open-edit.jpg",
+            "yaw": -80,
+            "pitch": -5,
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": -80,
+                    "type": "scene",
+                    "text": "Hot Works",
+                    "sceneId": "workshop"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": -170,
+                    "type": "scene",
+                    "text": "Dark Room",
+                    "sceneId": "lab"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 100,
+                    "targetYaw": 80,
+                    "type": "scene",
+                    "text": "Entrance",
+                    "sceneId": "entrance"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 115,
+                    "targetYaw": 120,
+                    "type": "scene",
+                    "text": "3D Print Farm",
+                    "sceneId": "printfarm"
+                }
+            ]
+        },
+
+        "lab": {
+            "title": "Dark Room",
+            "panorama": "360/sla.jpg",
+            "yaw": 30,
+            "pitch": -5,
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": -80,
+                    "type": "scene",
+                    "text": "Corridor",
+                    "sceneId": "corridor"
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 40,
+                    "type": "info",
+                    "text": "SLA 3D Printer"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 170,
+                    "type": "info",
+                    "text": "Something"
+                }
+            ]
+        },
+
+        "workshop": {
+            "title": "Hot Works",
+            "panorama": "360/lab1-edit.jpg",
+            "yaw": 80,
+            "pitch": -10,
+            "hotSpots": [
+                {
+                    "pitch": -8,
+                    "yaw": -41,
+                    "type": "scene",
+                    "text": "Compression Moulding",
+                    "sceneId": "workshop2"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": -100,
+                    "targetYaw": 90,
+                    "type": "scene",
+                    "text": "Corridor",
+                    "sceneId": "corridor"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 133,
+                    "type": "info",
+                    "text": "???"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 45,
+                    "type": "info",
+                    "text": "???"
+                },
+                {
+                    "pitch": -20,
+                    "yaw": 10,
+                    "type": "info",
+                    "text": "Twin Screw Extruder"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -176,
+                    "type": "info",
+                    "text": "Injection Moulding"
+                }
+            ]
+        },
+
+        "workshop2": {
+            "title": "Hot Works",
+            "panorama": "360/lab2.jpg",
+            "yaw": -20,
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 140,
+                    "targetYaw": 140,
+                    "type": "scene",
+                    "text": "Injection Moulding",
+                    "sceneId": "workshop"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": -140,
+                    "type": "scene",
+                    "targetYaw": -140,
+                    "text": "Corridor",
+                    "sceneId": "corridor"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": -4,
+                    "type": "info",
+                    "text": "Compression Moulding"
+                }
+            ]
+        }
+    }
+}
