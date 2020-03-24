@@ -40,7 +40,7 @@ viewer = pannellum.viewer('panorama', ﻿{
         "entrance": {
             "title": "Entrance",
             "panorama": "360/entrance.jpg",
-            "yaw": 170,
+            "yaw": 180,
             "pitch": -10,
             "hotSpots": [
                 {
@@ -56,7 +56,7 @@ viewer = pannellum.viewer('panorama', ﻿{
                     "yaw": 210,
                     "targetYaw": 210,
                     "type": "scene",
-                    "text": "Class Space",
+                    "text": "Teaching Space",
                     "sceneId": "class"
                 },
                 {
@@ -73,7 +73,7 @@ viewer = pannellum.viewer('panorama', ﻿{
                     "type": "scene",
                     "text": "Corridor",
                     "sceneId": "corridor"
-                },
+                }/*,
                 {
                     "pitch": -20,
                     "yaw": 150,
@@ -87,7 +87,7 @@ viewer = pannellum.viewer('panorama', ﻿{
                     "type": "info",
                     "createTooltipFunc": hotspot,
                     "createTooltipArgs": "<b>This it Title</b><br/>Lorem ipsum dolor sit amet rept sit.",
-                }
+                }*/
             ]
         },
 
@@ -102,7 +102,7 @@ viewer = pannellum.viewer('panorama', ﻿{
                     "yaw": -85,
                     "targetYaw": -85,
                     "type": "scene",
-                    "text": "Class Room",
+                    "text": "Teaching Space",
                     "sceneId": "class"
                 },
                 {
@@ -122,16 +122,52 @@ viewer = pannellum.viewer('panorama', ﻿{
                     "sceneId": "entrance"
                 },
                 {
-                    "pitch": -10,
+                    "pitch": -11,
                     "yaw": 180,
                     "type": "info",
-                    "text": "Ultimaker 2+"
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>Ultimaker 2+</b><br/>FDM printer of a build volume of up to 223 x 223 x 305 mm and a single head extruder.",
+                },
+                {
+                    "pitch": -30,
+                    "yaw": 180,
+                    "type": "info",
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>FlashForge Dreamer</b><br/>FDM printer of a build volume of up to 230 x 150 x 140mm and a dual head extruder.",
+                },
+                {
+                    "pitch": 8,
+                    "yaw": 180,
+                    "type": "info",
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>Rapide 100 Lite</b><br/>FDM printer of a build volume of 100 x 100 x 100mm and a single head extruder.",
+                },
+                {
+                    "pitch": -18,
+                    "yaw": -133,
+                    "type": "info",
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>Big Builder Dual Feed</b><br/>FDM printer of a build volume of 220x210x664mm mm and a dual head extruder. It can produce very beautiful high resolution prints with all sorts of gradients and color shifting throughout the print.",
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 126,
+                    "type": "info",
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>X7 Markforged Composite 3D Printer</b><br/>Top-of-the-line industrial 3D printer featuring a dual nozzle print system that supports continuous carbon fiber and Kevlar reinforcement.",
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 50,
+                    "type": "info",
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>Eddy Current scanning equipment</b><br/>Non-destructive testing used on partially ferromagnetic materials such as nickel alloys, duplex alloys, and thin-ferromagnetic materials such as ferritic chromium molybdenum stainless steel.",
                 }
             ]
         },
 
         "class": {
-            "title": "Class Space",
+            "title": "Teaching Space",
             "panorama": "360/class.jpg",
             "yaw": 160,
             "pitch": -10,
@@ -169,10 +205,11 @@ viewer = pannellum.viewer('panorama', ﻿{
                     "sceneId": "entrance"
                 },
                 {
-                    "pitch": -10,
-                    "yaw": 65,
+                    "pitch": -15,
+                    "yaw": 58,
                     "type": "info",
-                    "text": "Robotic Arm"
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>Robotic Arm System</b><br/>Medium-sized member of the Universal Robots family is ideal for automating low-weight processing tasks with its 5kgs payload and 850mm reach radius.",
                 }
             ]
         },
@@ -188,14 +225,15 @@ viewer = pannellum.viewer('panorama', ﻿{
                     "yaw": -80,
                     "type": "scene",
                     "text": "Hot Works",
-                    "sceneId": "workshop"
+                    "sceneId": "hotwork1"
                 },
                 {
                     "pitch": 0,
                     "yaw": -170,
+                    "targetYaw": 90,
                     "type": "scene",
                     "text": "Dark Room",
-                    "sceneId": "lab"
+                    "sceneId": "darkroom"
                 },
                 {
                     "pitch": 0,
@@ -216,37 +254,40 @@ viewer = pannellum.viewer('panorama', ﻿{
             ]
         },
 
-        "lab": {
+        "darkroom": {
             "title": "Dark Room",
-            "panorama": "360/sla.jpg",
-            "yaw": 30,
+            "panorama": "360/darkroom.jpg",
+            "yaw": 90,
             "pitch": -5,
             "hotSpots": [
                 {
                     "pitch": 0,
                     "yaw": -80,
+                    "targetYaw": 20,
                     "type": "scene",
                     "text": "Corridor",
                     "sceneId": "corridor"
                 },
                 {
-                    "pitch": -5,
-                    "yaw": 40,
+                    "pitch": -10,
+                    "yaw": 52,
                     "type": "info",
-                    "text": "SLA 3D Printer"
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>DWS SLA System</b><br/>Laser stereolithography technology of DWS turns a large variety of materials into solid: acrylate resin, ABS, polypropylene, rigid opaque, transparent, rubber, castable wax and ceramic.",
                 },
                 {
-                    "pitch": 0,
-                    "yaw": 170,
+                    "pitch": -20,
+                    "yaw": -30,
                     "type": "info",
-                    "text": "Something"
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>Magnetic Particle Inspection System</b><br/>Non-destructive testing (NDT) process for detecting surface and shallow subsurface discontinuities in ferromagnetic materials such as iron, nickel, cobalt, and some of their alloys.",
                 }
             ]
         },
 
-        "workshop": {
+        "hotwork1": {
             "title": "Hot Works",
-            "panorama": "360/lab1.jpg",
+            "panorama": "360/hotwork1.jpg",
             "yaw": 80,
             "pitch": -10,
             "hotSpots": [
@@ -255,7 +296,7 @@ viewer = pannellum.viewer('panorama', ﻿{
                     "yaw": -41,
                     "type": "scene",
                     "text": "Compression Moulding",
-                    "sceneId": "workshop2"
+                    "sceneId": "hotwork2"
                 },
                 {
                     "pitch": 0,
@@ -266,35 +307,32 @@ viewer = pannellum.viewer('panorama', ﻿{
                     "sceneId": "corridor"
                 },
                 {
-                    "pitch": 0,
-                    "yaw": 133,
-                    "type": "info",
-                    "text": "???"
-                },
-                {
-                    "pitch": -10,
-                    "yaw": 45,
-                    "type": "info",
-                    "text": "???"
-                },
-                {
-                    "pitch": -20,
-                    "yaw": 10,
-                    "type": "info",
-                    "text": "Twin Screw Extruder"
-                },
-                {
                     "pitch": -10,
                     "yaw": -176,
                     "type": "info",
-                    "text": "Injection Moulding"
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>Thermo Scientific HAAKE Minijet II</b><br/>Provides efficient sample preparation for testing mechanical properties.",
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 5,
+                    "type": "info",
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>Thermo Scientific HAAKE PolyLab OS System - Twin Screw Extruder</b><br/>Capable of compounding polymers with additives, reinforcing fibres and fillers.",
+                },
+                {
+                    "pitch": -6,
+                    "yaw": 120,
+                    "type": "info",
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>Thermo Scientific HAAKE PolyLab QC (Hot Melt Mixer)</b><br/>Focused on batch testing of many highly viscous substances.",
                 }
             ]
         },
 
-        "workshop2": {
+        "hotwork2": {
             "title": "Hot Works",
-            "panorama": "360/lab2.jpg",
+            "panorama": "360/hotwork2.jpg",
             "yaw": -20,
             "hotSpots": [
                 {
@@ -303,13 +341,13 @@ viewer = pannellum.viewer('panorama', ﻿{
                     "targetYaw": 140,
                     "type": "scene",
                     "text": "Injection Moulding",
-                    "sceneId": "workshop"
+                    "sceneId": "hotwork1"
                 },
                 {
                     "pitch": 0,
                     "yaw": -140,
                     "type": "scene",
-                    "targetYaw": -140,
+                    "targetYaw": 90,
                     "text": "Corridor",
                     "sceneId": "corridor"
                 },
@@ -317,7 +355,22 @@ viewer = pannellum.viewer('panorama', ﻿{
                     "pitch": -2,
                     "yaw": -4,
                     "type": "info",
-                    "text": "Compression Moulding"
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>Carver Hot Press System</b><br/>Precise and potentially rapid process for producing high quality composite parts in a wide range of volumes.",
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 79,
+                    "type": "info",
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>Thermo Scientific HAAKE PolyLab OS System - Single Screw Extruder</b><br/>Used to form a plastic product into the required shape.",
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 68,
+                    "type": "info",
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": "<b>Thermo Scientific HAAKE  PolyLab OS System  - Measuring Mixer</b><br/>State-of-the-art measuring mixer that is focused on the specific needs in research and development.",
                 }
             ]
         }

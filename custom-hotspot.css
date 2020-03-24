@@ -16,10 +16,35 @@ body {
     width: 100%;
     height: 100%;
 }
-.custom-hotspot {
-    height: 50px;
-    width: 50px;
-    background: #f00;
+.pnlm-hotspot {
+    background-color:rgba(237,61,61,.5);
+    height: 30px;
+    width: 30px;
+    border-radius:15px;
+}
+.pnlm-hotspot:hover {
+    background-color:rgba(237,61,61,.8);
+}
+.pnlm-hotspot.pnlm-info{
+    background-position:2px -102px;
+}
+.pnlm-hotspot.pnlm-scene{
+    /*background-color:rgba(81,185,208,.5);*/
+    background-position:2px -128px;
+}
+div.pnlm-tooltip span{
+    background-color:rgba(255,255,255,1);
+    color:#000;
+    font-weight: bold;
+}
+div.pnlm-tooltip:hover span:after {
+    border-color:rgba(255,255,255,1) transparent transparent transparent;
+}
+.custom-hotspot{
+    background-color:rgba(255,255,255,1)
+}
+.custom-hotspot:hover{
+    background-color:rgba(255,255,255,.2)
 }
 div.custom-tooltip span {
     visibility: hidden;
@@ -28,7 +53,7 @@ div.custom-tooltip span {
     background-color: #fff;
     color: #000;
     text-align: center;
-    max-width: 200px;
+    max-width: 250px;
     padding: 5px 10px;
     margin-left: -220px;
     cursor: default;
