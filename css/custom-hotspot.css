@@ -40,6 +40,13 @@ div.pnlm-tooltip span{
 div.pnlm-tooltip:hover span:after {
     border-color:rgba(255,255,255,1) transparent transparent transparent;
 }
+.pnlm-about-msg{
+    display: none;
+}
+
+
+
+
 .custom-hotspot{
     background-color:rgba(255,255,255,1)
 }
